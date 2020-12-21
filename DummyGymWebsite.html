@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('background.png');
+        font-family: 'Slabo 27px', serif;
+    }
+
+    .left img {
+        width: 60%;
+    }
+
+    #name {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid rgb(0, 255, 21); */
+        position: absolute;
+        top: 0px;
+        right: 1140px;
+        left: 25px;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(247, 240, 240); */
+        display: inline-block;
+        width: 55%;
+        margin: 10px 288px;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 18px;
+        left: 1096px;
+        /* border: 2px solid rgb(4, 0, 255); */
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: rgb(163 181 245);
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(113, 136, 238);
+    }
+
+    .btn {
+        font-family: 'Slabo 27px', serif;
+        margin: 5px 10px;
+        padding: 5px 5px;
+        color: rgb(163 181 245);
+        background-color: rgba(53, 53, 53, 0.466);
+        font-size: 16px;
+        border: 2px solid #717171;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(53, 53, 53);
+    }
+
+    .container {
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: 55px 26px;
+        padding: 25px 45px;
+        width: 35%;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        font-size: 20px;
+        margin: 5px;
+        padding: 10px;
+        width: 405px;
+        border-radius: 13px;
+        font-family: 'Slabo 27px', serif;
+    }
+
+    .container h2 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: 18px auto;
+        width: 97%;
+        padding: 5px;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="logo">
+            <div id="name">
+                Raj Fitness
+            </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Best gym of Ahmedabad --- Join Now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <div>
+                    <input type="text" name="" placeholder="Enter your Age">
+                    <div>
+                        <input type="text" name="" placeholder="Enter your Gender">
+                        <div>
+                            <input type="text" name="" placeholder="Enter your Locality">
+                            <div>
+                                <button class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
